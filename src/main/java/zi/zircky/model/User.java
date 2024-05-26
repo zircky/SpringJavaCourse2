@@ -1,19 +1,22 @@
 package zi.zircky.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "users")
 public class User {
   @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id")
   private Long id;
 
-  @Column
+  @Column(name = "name")
   private String name;
 
-  @Column
+  @Column(name = "lastName")
   private String lastName;
 
-  @Column
+  @Column(name = "age")
   private Byte age;
 
   public User() {}
