@@ -6,9 +6,6 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import zi.zircky.model.User;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Properties;
 
 public class Util {
@@ -17,18 +14,6 @@ public class Util {
   private static String password = "zIRCKY159";
 
   private static SessionFactory sessionFactory;
-
-  public static Connection getConnection() {
-    Connection conn = null;
-
-    try {
-      conn = DriverManager.getConnection(url, username, password);
-    } catch (SQLException e) {
-      e.printStackTrace();
-    }
-
-    return conn;
-  }
 
   public static SessionFactory getSessionFactory() {
     if (sessionFactory == null) {
