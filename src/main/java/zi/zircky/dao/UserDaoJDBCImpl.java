@@ -1,5 +1,5 @@
-package zi.zircky.dao;
-
+/* package zi.zircky.dao;
+s
 import zi.zircky.model.User;
 import zi.zircky.util.Util;
 
@@ -83,4 +83,4 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
   }
-}
+}*/
