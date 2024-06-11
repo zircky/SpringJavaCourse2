@@ -26,7 +26,8 @@ public class Util {
         settings.put("hibernate.connection.password", password);
         settings.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         settings.put("hibernate.show_sql", "true");
-        settings.put("hibernate.hbm2ddl.auto", "update");
+        settings.put("hibernate.hbm2ddl.auto", " ");
+
 
         configuration.setProperties(settings);
         configuration.addAnnotatedClass(User.class);
